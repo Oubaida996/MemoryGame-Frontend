@@ -1,0 +1,22 @@
+.uploadImage {
+    grid-area: 2/1/3/-1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .form-uploadImage {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .images {
+        display: flex;
+        gap: 10px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
