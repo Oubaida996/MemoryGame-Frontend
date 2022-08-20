@@ -1,0 +1,40 @@
+.App {
+    height: 100vh;
+    width: 100vw;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 30%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.8em;
+    &:focus {
+        outline: none;
+    }
+}
+
+input[type='submit'] {
+    width: 10%;
+    background-color: burlywood;
+    border-color: none;
+    &:hover {
+        background-color: #00ffff;
+    }
+}
