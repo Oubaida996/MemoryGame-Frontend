@@ -20,7 +20,7 @@ export default function Game() {
 
             axios.get(`${login.API}/getImages/6301ccb0a9903012bf1e5629`).then((data) => {
                 // console.log(data.data, 'get Image list');
-                console.log(data.data);
+                // console.log(data.data);
                 let newArr = [...data.data, ...data.data];
                 // I should edit it from backend request :) 
                 let updateObj = newArr.map((item, index) => {
@@ -67,12 +67,10 @@ export default function Game() {
         }
     }
 
-    function handleId(id, imageID) {
-        // e.preventDefault();
-        console.log(id, 3333333333);
+    function handleId(id) {
         if (prev === -1) {
             imageList[id]["state"] = "active";
-            console.log(imageList, 'dddddd');
+            // console.log(imageList, 'dddddd');
             setImageList([...imageList])
             setPrev(id);
         }
@@ -81,16 +79,18 @@ export default function Game() {
         }
 
         // console.log(imageList[id], 111111111111);
-        console.log(imageList, 2222);
 
 
     }
     //===========End handle image-game
+
+    const homeHandle = (e) => {
+        e.preventDefault();
+        navigate('/');
+    }
     return (
         <div className='container-game'>
-            <span className="material-symbols-outlined arrow-back" onClick={() => {
-                navigate('/');
-            }}>
+            <span className="material-symbols-outlined arrow-back" onClick={(e) => homeHandle(e)}>
                 arrow_back
             </span>
             <div className="tracker">
