@@ -18,7 +18,7 @@ export default function Game() {
     const getImageList = () => {
         return new Promise((resolve, reject) => {
 
-            axios.get(`${login.API}/getImages/6301ccb0a9903012bf1e5629`).then((data) => {
+            axios.get(`${login.API}/getImages/63029368e48e1cf8b8a2a79c`).then((data) => {
                 // console.log(data.data, 'get Image list');
                 // console.log(data.data);
                 let newArr = [...data.data, ...data.data];
