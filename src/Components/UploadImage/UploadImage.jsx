@@ -22,11 +22,22 @@ export default function UploadImage() {
 
     }
     const fileUploadHandler = async () => {
+        console.log(1111);
         const fd = new FormData();
+        console.log(2222);
+
         fd.append('image', selectedFile, selectedFile.name);
+        console.log(3333);
+
         await axios.post(`${login.API}/uploadImages/${question_id}`, fd).then(async res => {
+            console.log(44444);
+
             await getImageList();
+            console.log(55555);
+
             console.log(res);
+            console.log(6666666);
+
         }).catch((err) => {
             console.log('error from fileUploadHandler', err);
         });
