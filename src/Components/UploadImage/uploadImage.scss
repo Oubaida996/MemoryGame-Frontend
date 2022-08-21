@@ -6,7 +6,7 @@
     flex-direction: column;
     gap: 10px;
     .form-uploadImage {
-        width: 100%;
+        width: 50%;
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -17,6 +17,20 @@
         img {
             width: 100px;
             height: 100px;
+        }
+    }
+    .home {
+        position: absolute;
+        top: 100px;
+        width: 10%;
+        background-color: #6AC3DB;
+        color: #E5E5E5;
+        border-color: none;
+        text-align: center;
+        cursor: default;
+        &:hover {
+            background-color: #E5E5E5;
+            color: #6AC3DB;
         }
     }
 }

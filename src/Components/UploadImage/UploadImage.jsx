@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Buffer } from 'buffer';
 import './uploadImage.scss';
 import { LoginContext } from '../../context/auth';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 
 
@@ -11,6 +11,7 @@ import { useParams } from 'react-router-dom';
 
 
 export default function UploadImage() {
+    const navigate = useNavigate();
     const login = useContext(LoginContext);
     const [selectedFile, setSelectedFile] = useState();
     const [imageList, setImageList] = useState([]);
@@ -53,6 +54,9 @@ export default function UploadImage() {
     return (
         <div className='uploadImage'>
             {/* {console.log(imageList)} */}
+            <input className='home' value={'Home'} onClick={() => {
+                navigate('/');
+            }} />
             <h4>You should select one image then click upload to add it </h4>
             <div className='form-uploadImage'>
                 <input type="file" onChange={fileSelectedHandler} />

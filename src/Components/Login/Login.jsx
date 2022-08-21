@@ -41,9 +41,14 @@ export default function Login() {
             setOpen(true);
         }
     }
+
+    const guestHandler = () => {
+        navigate('/game');
+    }
+
     return (
         <div className='login'>
-
+            <input className='guest' value={'Guest'} onClick={guestHandler} />
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
                     {'Welcome ' + '   ' + name}
