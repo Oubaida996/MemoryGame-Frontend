@@ -27,6 +27,8 @@ export default function UploadImage() {
         await axios.post(`${login.API}/uploadImages/${question_id}`, fd).then(async res => {
             await getImageList();
             console.log(res);
+        }).catch((err) => {
+            console.log('error from fileUploadHandler', err);
         });
     }
     const getImageList = () => {
