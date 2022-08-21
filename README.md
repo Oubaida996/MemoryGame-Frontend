@@ -4,9 +4,9 @@
 live Url : [memory-game](https://630294ed80a0125473b7ced6--elaborate-pixie-910965.netlify.app/)  
 
 
-Backend : [backend]('https://github.com/Oubaida996/MemoryGame-Backend')  
+Backend : [backend](https://github.com/Oubaida996/MemoryGame-Backend)  
 
-Frontend : [frontend]('https://github.com/Oubaida996/MemoryGame-Frontend')
+Frontend : [frontend](https://github.com/Oubaida996/MemoryGame-Frontend)
 
 
 
