@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import TextareaAutosize from '@mui/material/TextareaAutosize';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { LoginContext } from '../../context/auth';
+
 import './question.scss';
 import axios from 'axios';
 import Snackbar from '@mui/material/Snackbar';
@@ -10,6 +12,8 @@ import MuiAlert from '@mui/material/Alert';
 
 
 export default function Question() {
+    const login = useContext(LoginContext);
+
     const navigate = useNavigate();
     const location = useLocation();
     const [text, setText] = useState();
@@ -36,7 +40,7 @@ export default function Question() {
 
     const addQuestionHandler = async () => {
 
-        await axios.post('http://localhost:3000/questions', {
+        await axios.post(`${login.API}/questions`, {
             question: text
         },
             {
@@ -45,7 +49,7 @@ export default function Question() {
                 }
             }
         ).then(res => {
-            console.log(res);
+            // console.log(res);
             setTimeout(() => {
                 navigate(`/uploadImages/${res.data._id}`);
 
