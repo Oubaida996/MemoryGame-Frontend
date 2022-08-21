@@ -6,7 +6,7 @@ import cookie from 'react-cookies';
 
 
 
-const API = 'http://localhost:3000';
+const API = 'https://memory-game-apps.herokuapp.com';
 export const LoginContext = React.createContext();//used by the consumer
 
 export default function LoginProvider(props) {
