@@ -48,6 +48,7 @@ export default function Login() {
 
     return (
         <div className='login'>
+
             <input className='guest' value={'Guest'} onClick={guestHandler} />
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
@@ -55,6 +56,7 @@ export default function Login() {
                 </Alert>
             </Snackbar>
             <form className='form' onSubmit={handelLogin}>
+                <h5>email :admin , pwd :123</h5><br />
                 <input type="text" placeholder='Email' onChange={(e) => setUserEmail(e.target.value)} />
                 <input autoComplete='none' type="password" placeholder='Password' onChange={(e) => setPwd(e.target.value)} />
                 {error && <p>{error}</p>}
