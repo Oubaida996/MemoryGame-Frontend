@@ -107,27 +107,9 @@
     .images-game {
         display: flex;
         flex-wrap: wrap;
-        gap: 22px;
-        justify-content: start;
-        align-items: flex-start;
-        .image-game {
-            width: 240px;
-            height: 240px;
-            border: 1px solid #E5E5E5;
-            box-shadow: 0px 0px 10px 2px rgba(37, 39, 38, 0.047476);
-            border-radius: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .typography {
-                font-style: normal;
-                font-weight: 900;
-                font-size: 231.56px;
-                line-height: 82px;
-                /* identical to box height, or 35% */
-                text-align: center;
-                color: #FFD217;
-            }
-        }
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
     }
 }

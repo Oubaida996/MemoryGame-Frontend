@@ -68,7 +68,7 @@ export default function LoginProvider(props) {
 
     useEffect(() => {
         const myUserInfo = cookie.load('userData');
-        console.log({ myUserInfo });
+        // console.log({ myUserInfo });
         validateMyUser(myUserInfo);
     }, []);
 
