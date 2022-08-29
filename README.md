@@ -1,7 +1,7 @@
 # Memory Game  
 
 # Links
-live Url : [memory-game](https://630294ed80a0125473b7ced6--elaborate-pixie-910965.netlify.app/)  
+live Url : [memory-game](https://memory-game-obieda.netlify.app/)  
 
 
 Backend : [backend](https://github.com/Oubaida996/MemoryGame-Backend)  
